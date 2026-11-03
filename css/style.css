@@ -117,6 +117,14 @@ h3 { letter-spacing: -.035em; }
 .recognition-section { padding-top:125px;padding-bottom:130px; }.recognition-list { border-top:1px solid var(--line); }.recognition-item { display:grid;grid-template-columns:60px 1fr auto;gap:1rem;align-items:center;padding:1.5rem 0;border-bottom:1px solid var(--line); }.recognition-index { font: .7rem "DM Mono";color:var(--accent); }.recognition-item h3 { font-size:1.2rem;margin:0 0 .25rem; }.recognition-item p { color:var(--muted);font-size:.85rem;margin:0; }.recognition-type { color:var(--muted);font-size:.6rem; }
 .contact-section { background:var(--bg-soft);border-top:1px solid var(--line);padding:120px 0; }.contact-layout { display:grid;grid-template-columns:1.1fr .9fr;gap:8%;align-items:end; }.contact-layout h2 { max-width:650px; }.contact-copy { color:var(--muted);max-width:430px;margin:1.5rem 0 0;line-height:1.8; }.contact-links { border-top:1px solid var(--line); }.contact-links a { display:grid;grid-template-columns:90px 1fr 20px;align-items:center;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line); }.contact-links a > span { color:var(--muted);font-size:.6rem; }.contact-links strong { font-size:.86rem;font-weight:500;overflow-wrap:anywhere; }.contact-links b { color:var(--accent);font-size:1.1rem; }.contact-links a:hover strong { color:var(--accent); }
 .site-footer { min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:1rem; }.site-footer > span { color:var(--muted);font-size:.57rem; }
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 800px) {
   .section-shell,.nav-wrap { width:min(100% - 40px,var(--max)); }
   .hero { min-height:auto;padding-top:75px;grid-template-columns:1fr;gap:2rem; }.hero-copy { padding-bottom:0; }.hero-art { height:380px; }.hero-foot { margin-top:1rem; }
