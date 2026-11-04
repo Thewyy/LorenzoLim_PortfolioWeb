@@ -125,6 +125,35 @@ h3 { letter-spacing: -.035em; }
   display: block;
 }
 
+.visual-math {
+  overflow: hidden;
+  position: relative;
+}
+
+.visual-math .project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.visual-math::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.visual-math .visual-index,
+.visual-math .visual-caption {
+  z-index: 2;
+}
+
 @media (max-width: 800px) {
   .section-shell,.nav-wrap { width:min(100% - 40px,var(--max)); }
   .hero { min-height:auto;padding-top:75px;grid-template-columns:1fr;gap:2rem; }.hero-copy { padding-bottom:0; }.hero-art { height:380px; }.hero-foot { margin-top:1rem; }
